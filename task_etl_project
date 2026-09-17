@@ -1,0 +1,17 @@
+# ETL Project Task Tracker
+
+- [/] **Phase 1: Setup & Data Generation**
+  - [ ] Initialize project structure (dags, data, scripts folders)
+  - [ ] Create `docker-compose.yaml` for Airflow
+  - [ ] Write Python script to generate mock sales (nested JSON) and weather (CSV) data
+  - [ ] Execute script to populate `data/raw`
+- [ ] **Phase 2: The ETL Logic (Python)**
+  - [ ] Write Transformation script using DuckDB/Pandas
+  - [ ] Write Load script to save to DuckDB warehouse
+- [ ] **Phase 3: Orchestration (Apache Airflow)**
+  - [ ] Create the DAG (`etl_pipeline.py`)
+  - [ ] Define tasks (Extract, Transform, Load) and dependencies
+  - [ ] Start Airflow via Docker Compose
+- [ ] **Phase 4: Verification**
+  - [ ] Verify DAG execution in Airflow UI
+  - [ ] Query final DuckDB table to validate results
